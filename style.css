@@ -9,9 +9,9 @@
   --cobalt-blue: hsl(234, 85%, 45%);
 
   /* Gradients */
-  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-slate-blue: rgb(120, 87, 255);
   --light-royal-blue: hsl(241, 81%, 54%);
-  --violet-blue: hsla(256, 72%, 46%, 1);
+  --violet-blue: rgb(78, 33, 202);
   --persian-blue: hsla(241, 72%, 46%, 0);
 
   /* Neutral */
@@ -31,22 +31,22 @@
 body{
    
   min-height: 100vh;
-  background-color: var(--pale-blue);
   font-family: var(--font-family);
   display: flex;
   justify-content: center;
   align-items: center;  
   font-size: 1.125rem;
   font-weight: 800;  
-  /* box-shadow: 0px 7px 23px 0px rgba(214,211,232,1); */
+  
 } 
 .card{
   width: clamp(700px, 60%, 750px);
   min-height: 500px;
   display: flex;
   border-radius: 1.875rem;
+  box-shadow: 5px 5px 20px rgb(191, 191, 191);
   overflow: hidden;
-  background-color: var(--white);
+
 }
 .cards {
   flex-basis: 425px;
@@ -119,6 +119,12 @@ body{
   border-radius: 3.125rem;
   margin-top: 1.25rem;
   font-weight: 400;
+}
+.card_summary a:hover{
+  background-image: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+}
+.card_summary a:active{
+  transform: translate(.0625rem,.0625rem);
 }
 .card_summary_item{
   display: flex;
